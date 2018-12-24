@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+
+<link rel="stylesheet" href="stylee.css">
+    </head>
+    <body >
+ 
+        <form class="register-form" action="QuizProcess.jsp" name="frm" method="post">
+        <div class="login-page">
+        <div class="form">      
+            
+            <img src="images/reg.png" alt="" />
+       
+                <font color="red"><b> Quiz Registration Form</b></font>
+                <br></br>
+               <font color="blue"><b>Name</b></font>
+                <input type="text" name="name" required pattern="[a-zA-Z][a-zA-Z ]+[a-zA-Z]$" title="Full Name should not contain any digit."/>
+       
+                <font color="blue"><b>Student ID</b></font>
+                <input type="text" required name="sid" maxlength="5" title="Student ID should be 5 digit only"/>
+       
+             
+                <font color="blue"><b>Password</b></font>
+                <input type="password" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" onkeyup="checkPass(); return false;"/>
+           
+       
+       <button  class="button button1 " onclick="document.location.href='QuizProcess.jsp'"><b>Submit</b></button>
+        <img src="images/admin.png" alt="" /><br>
+        <a href="Admin.jsp"><font color="red"><b>Are you Admin?Login Here</b></font></a>
+       
+        
+    </div>
+</div>
+</form>
+
+</body>
+</html>
